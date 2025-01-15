@@ -11,31 +11,33 @@ function fn() {
    var environment = {
         dev: {
             baseUrl: 'https://jsonplaceholder.typicode.com/',
-            dbUrl: 'http://localhost:3000'
+            dbUrl: 'http://localhost:3000',
             timeouts: {
                 connection: 5000,
-                read: 10000
+                read: 10000,
             },
         },
      qa: {
-                baseUrl: 'https://jsonplaceholder.typicode.com/',
-                dbUrl: 'http://localhost:3000'
+                baseUrl: 'https://jsonplaceholder.typicode.com',
+                dbUrl: 'http://localhost:3000',
                 timeouts: {
                     connection: 5000,
-                    read: 10000
+                    read: 10000,
                 },
             },
          prod: {
-                    baseUrl: 'https://jsonplaceholder.typicode.com/',
-                    dbUrl: 'http://localhost:3000'
+                    baseUrl: 'https://jsonplaceholder.typicode.com',
+                    dbUrl: 'http://localhost:3000',
                     timeouts: {
                         connection: 5000,
-                        read: 10000
+                        read: 10000,
                     },
                 },
    };
 
    var envConfig = environment[env];
+
+
 
    var config = {
         baseUrl: envConfig.baseUrl,

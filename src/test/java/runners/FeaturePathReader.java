@@ -13,7 +13,8 @@ public class FeaturePathReader {
     }
 
     private void loadFeaturesPaths() {
-        featurePaths.add("classpath:features/sample.feature");
+        featurePaths.add("classpath:features/users.feature");
+        featurePaths.add("classpath:features/postuser.feature");
     }
 
     public List<String> getFeaturePaths() {
