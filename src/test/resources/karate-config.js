@@ -10,7 +10,7 @@ function fn() {
 
    var environment = {
         dev: {
-            baseUrl: 'https://jsonplaceholder.typicode.com/',
+            baseUrl: 'http://localhost:3000',
             dbUrl: 'http://localhost:3000',
             timeouts: {
                 connection: 5000,
@@ -18,7 +18,7 @@ function fn() {
             },
         },
      qa: {
-                baseUrl: 'https://jsonplaceholder.typicode.com',
+                baseUrl: 'http://localhost:3000',
                 dbUrl: 'http://localhost:3000',
                 timeouts: {
                     connection: 5000,
@@ -26,7 +26,7 @@ function fn() {
                 },
             },
          prod: {
-                    baseUrl: 'https://jsonplaceholder.typicode.com',
+                    baseUrl: 'http://localhost:3000',
                     dbUrl: 'http://localhost:3000',
                     timeouts: {
                         connection: 5000,

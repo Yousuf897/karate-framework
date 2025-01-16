@@ -16,6 +16,8 @@ public class FeaturePathReader {
         featurePaths.add("classpath:features/users.feature");
         featurePaths.add("classpath:features/postuser.feature");
         featurePaths.add("classpath:features/putuser.feature");
+        featurePaths.add("classpath:features/deleteuser.feature");
+        featurePaths.add("classpath:features/creategetupdatedelete.feature");
     }
 
     public List<String> getFeaturePaths() {

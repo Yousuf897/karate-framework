@@ -2,13 +2,13 @@
 Feature: Testing create user
 
   Background:
+    Given url baseUrl
     * def emailUtility = Java.type('utilities.GenerateRandomEmails')
     * def randomEmail = emailUtility.generateRandomEmail()
     * def studentName = "Jack"
 
   @update_user
   Scenario: Validate the GET users from https://jsonplaceholder.typicode.com/users
-    Given url "http://localhost:3000"
     Given path "/api/students"
     And request
     """
@@ -29,8 +29,7 @@ Feature: Testing create user
 
     # Update the email of the student
     # Separate a String from an integer!
-    Given url "http://localhost:3000"
-    Given path "/api/students/studentId"
+    Given path "/api/students", studentId
     * def newRandomEmail = emailUtility.generateRandomEmail()
     And request
     """
@@ -42,4 +41,6 @@ Feature: Testing create user
     When method put
     Then status 200
     And match response.email == newRandomEmail
+
+
 
