@@ -12,7 +12,7 @@ public class TestRunner {
     private final int THREAD_COUNT = 5;
 
     private String getTags() {
-        return System.getProperty("karate.tags", "@test_123");
+        return System.getProperty("karate.tags", "@AuthorizedRequestForUser");
     }
 
     @Test
